@@ -1,0 +1,10 @@
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\bin\Debug\Business_Try.exe.config
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\bin\Debug\Business_Try.exe
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\bin\Debug\Business_Try.pdb
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\obj\Debug\Business_Try.csproj.AssemblyReference.cache
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\obj\Debug\Business_Try.Properties.Resources.resources
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\obj\Debug\Business_Try.csproj.GenerateResource.cache
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\obj\Debug\Business_Try.csproj.CoreCompileInputs.cache
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\obj\Debug\Business_Try.exe
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\obj\Debug\Business_Try.pdb
+C:\Users\linkm\Code\Csharp\Personal\Business_Try\obj\Debug\Business_Try.Form1.resources
