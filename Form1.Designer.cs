@@ -67,7 +67,7 @@
             // dgvEmployees
             // 
             this.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployees.Location = new System.Drawing.Point(12, 368);
+            this.dgvEmployees.Location = new System.Drawing.Point(7, 315);
             this.dgvEmployees.Name = "dgvEmployees";
             this.dgvEmployees.Size = new System.Drawing.Size(467, 225);
             this.dgvEmployees.TabIndex = 0;
@@ -99,7 +99,7 @@
             // txtSalary
             // 
             this.txtSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalary.Location = new System.Drawing.Point(138, 80);
+            this.txtSalary.Location = new System.Drawing.Point(141, 56);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Size = new System.Drawing.Size(100, 21);
             this.txtSalary.TabIndex = 4;
@@ -128,7 +128,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(83, 79);
+            this.label3.Location = new System.Drawing.Point(86, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 16);
             this.label3.TabIndex = 8;
@@ -148,7 +148,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(156, 38);
+            this.label5.Location = new System.Drawing.Point(156, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 16);
             this.label5.TabIndex = 12;
@@ -158,7 +158,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(24, 39);
+            this.label6.Location = new System.Drawing.Point(24, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 16);
             this.label6.TabIndex = 11;
@@ -167,7 +167,7 @@
             // txtOut
             // 
             this.txtOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOut.Location = new System.Drawing.Point(229, 34);
+            this.txtOut.Location = new System.Drawing.Point(229, 19);
             this.txtOut.Name = "txtOut";
             this.txtOut.Size = new System.Drawing.Size(52, 21);
             this.txtOut.TabIndex = 10;
@@ -176,7 +176,7 @@
             // txtIn
             // 
             this.txtIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIn.Location = new System.Drawing.Point(91, 35);
+            this.txtIn.Location = new System.Drawing.Point(91, 20);
             this.txtIn.Name = "txtIn";
             this.txtIn.Size = new System.Drawing.Size(52, 21);
             this.txtIn.TabIndex = 9;
@@ -189,7 +189,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(123, 330);
+            this.btnSave.Location = new System.Drawing.Point(118, 277);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(103, 32);
             this.btnSave.TabIndex = 13;
@@ -204,7 +204,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(247, 330);
+            this.btnDelete.Location = new System.Drawing.Point(242, 277);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(103, 32);
             this.btnDelete.TabIndex = 14;
@@ -220,7 +220,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 88);
+            this.groupBox1.Location = new System.Drawing.Point(7, 65);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(467, 111);
             this.groupBox1.TabIndex = 15;
@@ -235,12 +235,11 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtSalary);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(69, 205);
+            this.groupBox2.Location = new System.Drawing.Point(64, 182);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(321, 119);
+            this.groupBox2.Size = new System.Drawing.Size(321, 89);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
             // 
             // panel1
             // 
@@ -250,7 +249,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(491, 27);
+            this.panel1.Size = new System.Drawing.Size(483, 27);
             this.panel1.TabIndex = 17;
             // 
             // close
@@ -260,7 +259,7 @@
             this.close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.close.ForeColor = System.Drawing.Color.White;
-            this.close.Location = new System.Drawing.Point(460, 0);
+            this.close.Location = new System.Drawing.Point(452, 0);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(31, 27);
             this.close.TabIndex = 18;
@@ -277,7 +276,7 @@
             this.toolStripDropDownButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 27);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(491, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(483, 25);
             this.toolStrip1.TabIndex = 18;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -353,7 +352,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(491, 605);
+            this.ClientSize = new System.Drawing.Size(483, 551);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);

@@ -17,15 +17,15 @@ namespace Business_Try
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Employees (Name, Department, Job, Salary, inHour, outHour)" +
-                               "VALUES (@Name, @Department, @Job, @Salary, @InHour, @OutHour)";
+                string query = "INSERT INTO Employees (Namae, Department, Job, Salary, inHour, outHour)" +
+                               "VALUES (@Namae, @Department, @Job, @Salary, @InHour, @OutHour)";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Name", employee.Name);
+                    command.Parameters.AddWithValue("@Namae", employee.Name);
                     command.Parameters.AddWithValue("@Department", employee.Department);
                     command.Parameters.AddWithValue("@Job", employee.Job);
-                    command.Parameters.AddWithValue("@Salary", Encrypt(employee.Salary.ToString())); // Encrypt salary
+                    command.Parameters.AddWithValue("@Salary", Encrypt(employee.Salary.ToString()));
                     command.Parameters.AddWithValue("@InHour", employee.InHour);
                     command.Parameters.AddWithValue("@OutHour", employee.OutHour);
 
@@ -37,30 +37,29 @@ namespace Business_Try
 
         public List<Employee> GetAllEmployees()
         {
-            var employees = new List<Employee>();
+            List<Employee> employees = new List<Employee>();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM Employees";
+                connection.Open();
+                string query = "SELECT ID, Namae, Department, Job, Salary, InHour, OutHour FROM Employees";
+
                 using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    while (reader.Read())
                     {
-                        while (reader.Read())
+                        Employee employee = new Employee
                         {
-                            var employee = new Employee
-                            {
-                                Id = reader.GetInt32(0),
-                                Name = reader.GetString(1),
-                                Department = reader.GetString(2),
-                                Job = reader.GetString(3),
-                                Salary = decimal.Parse(Decrypt(reader.GetString(4))), // Decrypt salary
-                                InHour = reader.GetTimeSpan(5),
-                                OutHour = reader.GetTimeSpan(6)
-                            };
-                            employees.Add(employee);
-                        }
+                            Id = reader.GetInt32(0),
+                            Name = reader.GetString(1),
+                            Department = reader.GetString(2),
+                            Job = reader.GetString(3),
+                            Salary = reader.GetDecimal(4), 
+                            InHour = reader.GetTimeSpan(5),
+                            OutHour = reader.GetTimeSpan(6)
+                        };
+                        employees.Add(employee);
                     }
                 }
             }
